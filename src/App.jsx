@@ -60,7 +60,6 @@ function driveWinner(gameBoard, players) {
 function App() {
   const [players, setplayers] = useState(Players);
   const [gameTurns, setGameTurns] = useState([]);
-  // const [activePlayer, setActivePlayer] = useState("X");
 
   const activePlayer = driveActivePlayer(gameTurns);
 
@@ -71,7 +70,6 @@ function App() {
   let hasDraw = gameTurns.length === 9 && !winner;
 
   function handleSelectedSquare(rowIndex, colIndex) {
-    // setActivePlayer((curActivePlayer) => (curActivePlayer === "X" ? "O" : "X"));
     setGameTurns((prevTurns) => {
       const currentplyer = driveActivePlayer(prevTurns);
 
