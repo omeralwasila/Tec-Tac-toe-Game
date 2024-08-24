@@ -191,12 +191,10 @@ ol {
 }
 
 @media (max-width: 768px) {
-  header img {
-    width: 6rem;
+  menu {
+    padding: 0;
   }
-  h1 {
-    font-size: 2rem;
-  }
+
   #game-board button {
     width: 7rem;
     height: 7rem;
@@ -213,7 +211,7 @@ ol {
 }
 @media (max-width: 522px) {
   header img {
-    width: 4rem;
+    width: 5rem;
   }
   #game-board button {
     width: 5rem;
